@@ -96,10 +96,10 @@ int main(int argc, char* argv[])
 
   // process events
   std::vector<std::string> topics;
-  topics.push_back(std::string("/dvs/events"));
+  topics.push_back(std::string("/davis_left/events"));
   // topics.push_back(std::string("/davis_right/events"));
   std::vector<std::string> topics_rename;
-  topics_rename.push_back(std::string("/davis/events"));
+  topics_rename.push_back(std::string("/davis/left/events"));
   // topics_rename.push_back(std::string("/davis/right/events"));
   for(size_t i = 0;i < topics.size(); i++)
   {
