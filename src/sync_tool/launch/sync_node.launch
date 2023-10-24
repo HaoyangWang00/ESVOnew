@@ -1,0 +1,5 @@
+<launch>
+    <rosparam file="$(find sync_tool)/config/para.yaml" command="load" />  
+    <node name="ts_sync_node" pkg = "sync_tool" type = "ts_sync_node" output = "screen">
+    </node>
+</launch>

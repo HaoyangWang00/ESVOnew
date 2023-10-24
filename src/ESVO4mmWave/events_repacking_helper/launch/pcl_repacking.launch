@@ -1,0 +1,7 @@
+<launch>
+  <node name="RadarScanEditor" pkg="events_repacking_helper" type="RadarScanEditor" output="screen" required="true" 
+    args="/home/haoyang-22/project/ESVO/bag/1020_radarscan_origin.bag
+          /home/haoyang-22/project/ESVO/bag/1020_pointcloud.bag" >
+  </node>
+</launch>
+<!-- launch-prefix="gdb -ex run args"  -->

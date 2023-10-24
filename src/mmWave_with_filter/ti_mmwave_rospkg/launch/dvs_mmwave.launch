@@ -41,15 +41,15 @@
   <arg name="max_allowed_azimuth_angle_deg" default="90" doc="Maximum allowed azimuth angle in degrees for detected object data [0 > value >= 90]}"/>
 
   <!-- mmWave_Manager node -->
-  <node pkg="ti_mmwave_rospkg" type="ti_mmwave_rospkg" name="ti_mmwave" ns="radar_0" output="screen">
+  <node pkg="ti_mmwave_rospkg" type="ti_mmwave_rospkg" name="ti_mmwave" ns="radar" output="screen">
     <param name="command_port" value="/dev/ttyACM0"  />
     <param name="command_rate" value="115200"   />
     <param name="data_port" value="/dev/ttyACM1"  />
     <param name="data_rate" value="921600"   />
     <param name="max_allowed_elevation_angle_deg" value="$(arg max_allowed_elevation_angle_deg)"   />
     <param name="max_allowed_azimuth_angle_deg" value="$(arg max_allowed_azimuth_angle_deg)"   />
-    <param name="frame_id" value="/ti_mmwave_0"/>
-    <remap from="/ti_mmwave/radar_scan_pcl" to="/ti_mmwave/radar_scan_pcl_0"/>
+    <param name="frame_id" value="/ti_mmwave"/>
+    <!-- <remap from="/ti_mmwave/radar_scan_pcl" to="/ti_mmwave/radar_scan_pcl_0"/> -->
   </node>
 
   <!-- mmWaveQuickConfig node (terminates after configuring mmWave sensor) -->
@@ -58,9 +58,10 @@
 
 
   <!--  Static transform from map to ti_mmwave_pcl for visualization of dvs and radar using Rviz -->
-  <node pkg="tf" type="static_transform_publisher" name="radar_baselink" args="0 0 0 0 0 0 ti_mmwave_pcl ti_mmwave_0 100"/>
+  <node pkg="tf" type="static_transform_publisher" name="radar_baselink" args="0 0 0 0 0 0 ti_mmwave_pcl ti_mmwave 100"/>
 
-  <node pkg="tf" type="static_transform_publisher" name="camera_baselink" args="-2 0 .95 -1.5707963267948966 0 -1.5707963267948966 ti_mmwave_pcl usb_webcam 100"/>
+  <node pkg="tf" type="static_transform_publisher" name="camera_baselink" args="-2 0 .95 -1.5707963267948966 0 -1.5707963267948966 ti_mmwave_pcl davis_left 100"/>
+  <!-- <node pkg="tf" type="static_transform_publisher" name="camera_baselink" args="-2 0 .95 -1.5707963267948966 0 -1.5707963267948966 ti_mmwave_pcl usb_webcam 100"/> -->
 
   <node pkg="ti_mmwave_rospkg" type="radius_filter" name="radius_filter" output="screen"/>
   <node pkg="ti_mmwave_rospkg" type="hungarian.py" name="hungarian" output="screen"/>
