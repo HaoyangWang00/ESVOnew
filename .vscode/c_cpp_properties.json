@@ -1,0 +1,33 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/haoyang-22/project/ESVOnew/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/haoyang-22/project/ESVOnew/src/rpg_dvs_ros/davis_ros_driver/include/**",
+        "/home/haoyang-22/project/ESVOnew/src/rpg_dvs_ros/dvs_calibration/include/**",
+        "/home/haoyang-22/project/ESVOnew/src/rpg_dvs_ros/dvs_renderer/include/**",
+        "/home/haoyang-22/project/ESVOnew/src/rpg_dvs_ros/dvs_ros_driver/include/**",
+        "/home/haoyang-22/project/ESVOnew/src/rpg_dvs_ros/dvxplorer_ros_driver/include/**",
+        "/home/haoyang-22/project/ESVOnew/src/eigen_checks/include/**",
+        "/home/haoyang-22/project/ESVOnew/src/ESVO4mmWave/esvo_core/include/**",
+        "/home/haoyang-22/project/ESVOnew/src/ESVO4mmWave/esvo_time_surface/include/**",
+        "/home/haoyang-22/project/ESVOnew/src/minkindr/minkindr/include/**",
+        "/home/haoyang-22/project/ESVOnew/src/minkindr_ros/minkindr_conversions/include/**",
+        "/home/haoyang-22/project/ESVOnew/src/mmWave_with_filter/serial/include/**",
+        "/home/haoyang-22/project/ESVOnew/src/mmWave_with_filter/ti_mmwave_rospkg/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
