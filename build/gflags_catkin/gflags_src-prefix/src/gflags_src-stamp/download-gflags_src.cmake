@@ -22,14 +22,14 @@ function(check_file_hash has_hash hash_is_good)
   set("${has_hash}" TRUE PARENT_SCOPE)
 
   message(STATUS "verifying file...
-       file='/home/haoyang-22/project/ESVO4mmWave/build/gflags_catkin/gflags_src-prefix/src/v2.2.1.zip'")
+       file='/home/haoyang-22/project/ESVOnew/build/gflags_catkin/gflags_src-prefix/src/v2.2.1.zip'")
 
-  file("MD5" "/home/haoyang-22/project/ESVO4mmWave/build/gflags_catkin/gflags_src-prefix/src/v2.2.1.zip" actual_value)
+  file("MD5" "/home/haoyang-22/project/ESVOnew/build/gflags_catkin/gflags_src-prefix/src/v2.2.1.zip" actual_value)
 
   if(NOT "${actual_value}" STREQUAL "2d988ef0b50939fb50ada965dafce96b")
     set("${hash_is_good}" FALSE PARENT_SCOPE)
     message(STATUS "MD5 hash of
-    /home/haoyang-22/project/ESVO4mmWave/build/gflags_catkin/gflags_src-prefix/src/v2.2.1.zip
+    /home/haoyang-22/project/ESVOnew/build/gflags_catkin/gflags_src-prefix/src/v2.2.1.zip
   does not match expected value
     expected: '2d988ef0b50939fb50ada965dafce96b'
       actual: '${actual_value}'")
@@ -71,7 +71,7 @@ function(sleep_before_download attempt)
   execute_process(COMMAND "${CMAKE_COMMAND}" -E sleep "${sleep_seconds}")
 endfunction()
 
-if("/home/haoyang-22/project/ESVO4mmWave/build/gflags_catkin/gflags_src-prefix/src/v2.2.1.zip" STREQUAL "")
+if("/home/haoyang-22/project/ESVOnew/build/gflags_catkin/gflags_src-prefix/src/v2.2.1.zip" STREQUAL "")
   message(FATAL_ERROR "LOCAL can't be empty")
 endif()
 
@@ -79,32 +79,32 @@ if("https://github.com/gflags/gflags/archive/v2.2.1.zip" STREQUAL "")
   message(FATAL_ERROR "REMOTE can't be empty")
 endif()
 
-if(EXISTS "/home/haoyang-22/project/ESVO4mmWave/build/gflags_catkin/gflags_src-prefix/src/v2.2.1.zip")
+if(EXISTS "/home/haoyang-22/project/ESVOnew/build/gflags_catkin/gflags_src-prefix/src/v2.2.1.zip")
   check_file_hash(has_hash hash_is_good)
   if(has_hash)
     if(hash_is_good)
       message(STATUS "File already exists and hash match (skip download):
-  file='/home/haoyang-22/project/ESVO4mmWave/build/gflags_catkin/gflags_src-prefix/src/v2.2.1.zip'
+  file='/home/haoyang-22/project/ESVOnew/build/gflags_catkin/gflags_src-prefix/src/v2.2.1.zip'
   MD5='2d988ef0b50939fb50ada965dafce96b'"
       )
       return()
     else()
       message(STATUS "File already exists but hash mismatch. Removing...")
-      file(REMOVE "/home/haoyang-22/project/ESVO4mmWave/build/gflags_catkin/gflags_src-prefix/src/v2.2.1.zip")
+      file(REMOVE "/home/haoyang-22/project/ESVOnew/build/gflags_catkin/gflags_src-prefix/src/v2.2.1.zip")
     endif()
   else()
     message(STATUS "File already exists but no hash specified (use URL_HASH):
-  file='/home/haoyang-22/project/ESVO4mmWave/build/gflags_catkin/gflags_src-prefix/src/v2.2.1.zip'
+  file='/home/haoyang-22/project/ESVOnew/build/gflags_catkin/gflags_src-prefix/src/v2.2.1.zip'
 Old file will be removed and new file downloaded from URL."
     )
-    file(REMOVE "/home/haoyang-22/project/ESVO4mmWave/build/gflags_catkin/gflags_src-prefix/src/v2.2.1.zip")
+    file(REMOVE "/home/haoyang-22/project/ESVOnew/build/gflags_catkin/gflags_src-prefix/src/v2.2.1.zip")
   endif()
 endif()
 
 set(retry_number 5)
 
 message(STATUS "Downloading...
-   dst='/home/haoyang-22/project/ESVO4mmWave/build/gflags_catkin/gflags_src-prefix/src/v2.2.1.zip'
+   dst='/home/haoyang-22/project/ESVOnew/build/gflags_catkin/gflags_src-prefix/src/v2.2.1.zip'
    timeout='none'
    inactivity timeout='none'"
 )
@@ -126,7 +126,7 @@ foreach(i RANGE ${retry_number})
 
       file(
         DOWNLOAD
-        "${url}" "/home/haoyang-22/project/ESVO4mmWave/build/gflags_catkin/gflags_src-prefix/src/v2.2.1.zip"
+        "${url}" "/home/haoyang-22/project/ESVOnew/build/gflags_catkin/gflags_src-prefix/src/v2.2.1.zip"
         SHOW_PROGRESS
         # no TIMEOUT
         # no INACTIVITY_TIMEOUT
@@ -143,7 +143,7 @@ foreach(i RANGE ${retry_number})
         check_file_hash(has_hash hash_is_good)
         if(has_hash AND NOT hash_is_good)
           message(STATUS "Hash mismatch, removing...")
-          file(REMOVE "/home/haoyang-22/project/ESVO4mmWave/build/gflags_catkin/gflags_src-prefix/src/v2.2.1.zip")
+          file(REMOVE "/home/haoyang-22/project/ESVOnew/build/gflags_catkin/gflags_src-prefix/src/v2.2.1.zip")
         else()
           message(STATUS "Downloading... done")
           return()

@@ -1,8 +1,8 @@
-prefix=/home/haoyang-22/project/ESVO4mmWave/devel
+prefix=/home/haoyang-22/project/ESVOnew/devel
 
 Name: gflags_catkin
 Description: Description of gflags_catkin
 Version: 2.2.1
-Cflags: -I/home/haoyang-22/project/ESVO4mmWave/devel/include
+Cflags: -I/home/haoyang-22/project/ESVOnew/devel/include
 Libs: -L${prefix}/lib -lgflags
 Requires: 

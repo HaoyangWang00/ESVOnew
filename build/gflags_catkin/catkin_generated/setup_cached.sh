@@ -7,4 +7,5 @@
 # new environment variables
 
 # modified environment variables
-export PWD='/home/haoyang-22/project/ESVO4mmWave/build/gflags_catkin'
+export PWD='/home/haoyang-22/project/ESVOnew/build/gflags_catkin'
+export PYTHONPATH="/home/haoyang-22/project/ESVOnew/devel/lib/python3/dist-packages:$PYTHONPATH"

@@ -67,14 +67,14 @@ set(eigen_catkin_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(eigen_catkin_SOURCE_PREFIX /home/haoyang-22/project/ESVO4mmWave/src/eigen_catkin)
-  set(eigen_catkin_DEVEL_PREFIX /home/haoyang-22/project/ESVO4mmWave/devel)
+  set(eigen_catkin_SOURCE_PREFIX /home/haoyang-22/project/ESVOnew/src/eigen_catkin)
+  set(eigen_catkin_DEVEL_PREFIX /home/haoyang-22/project/ESVOnew/devel)
   set(eigen_catkin_INSTALL_PREFIX "")
   set(eigen_catkin_PREFIX ${eigen_catkin_DEVEL_PREFIX})
 else()
   set(eigen_catkin_SOURCE_PREFIX "")
   set(eigen_catkin_DEVEL_PREFIX "")
-  set(eigen_catkin_INSTALL_PREFIX /home/haoyang-22/project/ESVO4mmWave/install)
+  set(eigen_catkin_INSTALL_PREFIX /home/haoyang-22/project/ESVOnew/install)
   set(eigen_catkin_PREFIX ${eigen_catkin_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/haoyang-22/project/ESVO4mmWave/install/lib;/home/haoyang-22/project/ESVO4mmWave/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/haoyang-22/project/ESVOnew/install/lib;/home/haoyang-22/project/ESVOnew/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

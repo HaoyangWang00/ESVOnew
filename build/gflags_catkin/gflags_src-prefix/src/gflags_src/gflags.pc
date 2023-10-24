@@ -1,4 +1,4 @@
-prefix=/home/haoyang-22/project/ESVO4mmWave/devel
+prefix=/home/haoyang-22/project/ESVOnew/devel
 exec_prefix=${prefix}
 bindir=${prefix}/bin
 libdir=${prefix}/lib

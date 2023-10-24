@@ -3,7 +3,7 @@
 
 # Relative path conversion top directories.
 set(CMAKE_RELATIVE_PATH_TOP_SOURCE "/usr/src/googletest")
-set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/haoyang-22/project/ESVO4mmWave/build/dvs_renderer")
+set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/haoyang-22/project/ESVOnew/build/dvs_renderer")
 
 # Force unix paths in dependencies.
 set(CMAKE_FORCE_UNIX_PATHS 1)

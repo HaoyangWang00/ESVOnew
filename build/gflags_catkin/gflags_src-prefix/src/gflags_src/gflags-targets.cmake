@@ -46,7 +46,7 @@ add_library(gflags_shared SHARED IMPORTED)
 
 set_target_properties(gflags_shared PROPERTIES
   INTERFACE_COMPILE_DEFINITIONS "GFLAGS_IS_A_DLL=0"
-  INTERFACE_INCLUDE_DIRECTORIES "/home/haoyang-22/project/ESVO4mmWave/build/gflags_catkin/gflags_src-prefix/src/gflags_src/include"
+  INTERFACE_INCLUDE_DIRECTORIES "/home/haoyang-22/project/ESVOnew/build/gflags_catkin/gflags_src-prefix/src/gflags_src/include"
   INTERFACE_LINK_LIBRARIES "-lpthread"
 )
 
@@ -55,20 +55,20 @@ add_library(gflags_nothreads_shared SHARED IMPORTED)
 
 set_target_properties(gflags_nothreads_shared PROPERTIES
   INTERFACE_COMPILE_DEFINITIONS "GFLAGS_IS_A_DLL=0"
-  INTERFACE_INCLUDE_DIRECTORIES "/home/haoyang-22/project/ESVO4mmWave/build/gflags_catkin/gflags_src-prefix/src/gflags_src/include"
+  INTERFACE_INCLUDE_DIRECTORIES "/home/haoyang-22/project/ESVOnew/build/gflags_catkin/gflags_src-prefix/src/gflags_src/include"
 )
 
 # Import target "gflags_shared" for configuration "Release"
 set_property(TARGET gflags_shared APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(gflags_shared PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/haoyang-22/project/ESVO4mmWave/build/gflags_catkin/gflags_src-prefix/src/gflags_src/lib/libgflags.so.2.2.1"
+  IMPORTED_LOCATION_RELEASE "/home/haoyang-22/project/ESVOnew/build/gflags_catkin/gflags_src-prefix/src/gflags_src/lib/libgflags.so.2.2.1"
   IMPORTED_SONAME_RELEASE "libgflags.so.2.2"
   )
 
 # Import target "gflags_nothreads_shared" for configuration "Release"
 set_property(TARGET gflags_nothreads_shared APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(gflags_nothreads_shared PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/haoyang-22/project/ESVO4mmWave/build/gflags_catkin/gflags_src-prefix/src/gflags_src/lib/libgflags_nothreads.so.2.2.1"
+  IMPORTED_LOCATION_RELEASE "/home/haoyang-22/project/ESVOnew/build/gflags_catkin/gflags_src-prefix/src/gflags_src/lib/libgflags_nothreads.so.2.2.1"
   IMPORTED_SONAME_RELEASE "libgflags_nothreads.so.2.2"
   )
 

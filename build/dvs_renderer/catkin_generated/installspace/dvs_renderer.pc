@@ -1,4 +1,4 @@
-prefix=/home/haoyang-22/project/ESVO4mmWave/install
+prefix=/home/haoyang-22/project/ESVOnew/install
 
 Name: dvs_renderer
 Description: Description of dvs_renderer

@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "${prefix}/include".split(';') if "${prefix}/i
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "-lgflags".split(';') if "-lgflags" != "" else []
 PROJECT_NAME = "gflags_catkin"
-PROJECT_SPACE_DIR = "/home/haoyang-22/project/ESVO4mmWave/install"
+PROJECT_SPACE_DIR = "/home/haoyang-22/project/ESVOnew/install"
 PROJECT_VERSION = "2.2.1"

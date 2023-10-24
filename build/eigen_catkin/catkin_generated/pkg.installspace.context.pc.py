@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "/usr/local/include/eigen3".split(';') if "/us
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "eigen_catkin"
-PROJECT_SPACE_DIR = "/home/haoyang-22/project/ESVO4mmWave/install"
+PROJECT_SPACE_DIR = "/home/haoyang-22/project/ESVOnew/install"
 PROJECT_VERSION = "3.2.12"

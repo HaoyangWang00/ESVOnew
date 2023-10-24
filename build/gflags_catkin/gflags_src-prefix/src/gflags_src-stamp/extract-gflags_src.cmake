@@ -1,7 +1,7 @@
 # Make file names absolute:
 #
-get_filename_component(filename "/home/haoyang-22/project/ESVO4mmWave/build/gflags_catkin/gflags_src-prefix/src/v2.2.1.zip" ABSOLUTE)
-get_filename_component(directory "/home/haoyang-22/project/ESVO4mmWave/build/gflags_catkin/gflags_src-prefix/src/gflags_src" ABSOLUTE)
+get_filename_component(filename "/home/haoyang-22/project/ESVOnew/build/gflags_catkin/gflags_src-prefix/src/v2.2.1.zip" ABSOLUTE)
+get_filename_component(directory "/home/haoyang-22/project/ESVOnew/build/gflags_catkin/gflags_src-prefix/src/gflags_src" ABSOLUTE)
 
 message(STATUS "extracting...
      src='${filename}'

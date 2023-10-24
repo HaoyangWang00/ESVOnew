@@ -1,8 +1,0 @@
-prefix=/home/haoyang-22/project/ESVO4mmWave/install
-
-Name: glog_catkin
-Description: Description of glog_catkin
-Version: 0.3.5
-Cflags: -I/usr/local/include
-Libs: -L${prefix}/lib /usr/local/lib/libglog.so
-Requires: gflags_catkin

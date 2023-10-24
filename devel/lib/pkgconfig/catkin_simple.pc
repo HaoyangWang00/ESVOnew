@@ -1,4 +1,4 @@
-prefix=/home/haoyang-22/project/ESVO4mmWave/devel
+prefix=/home/haoyang-22/project/ESVOnew/devel
 
 Name: catkin_simple
 Description: Description of catkin_simple
