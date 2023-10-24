@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/haoyang-22/project/ESVO4mmWave/devel/lib/dvs_renderer/dvs_renderer"
-  "/home/haoyang-22/project/ESVO4mmWave/devel/lib/dvs_renderer/dvs_renderer.pdb"
+  "/home/haoyang-22/project/ESVOnew/devel/lib/dvs_renderer/dvs_renderer"
+  "/home/haoyang-22/project/ESVOnew/devel/lib/dvs_renderer/dvs_renderer.pdb"
   "CMakeFiles/dvs_renderer.dir/src/image_tracking.cpp.o"
   "CMakeFiles/dvs_renderer.dir/src/image_tracking.cpp.o.d"
   "CMakeFiles/dvs_renderer.dir/src/renderer.cpp.o"

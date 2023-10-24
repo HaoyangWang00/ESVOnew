@@ -7,4 +7,4 @@
 # new environment variables
 
 # modified environment variables
-export PWD='/home/haoyang-22/project/ESVO4mmWave/build/davis_ros_driver'
+export PWD='/home/haoyang-22/project/ESVOnew/build/davis_ros_driver'

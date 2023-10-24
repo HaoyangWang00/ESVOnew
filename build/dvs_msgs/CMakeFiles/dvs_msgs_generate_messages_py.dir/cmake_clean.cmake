@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "/home/haoyang-22/project/ESVO4mmWave/devel/lib/python3/dist-packages/dvs_msgs/msg/_Event.py"
-  "/home/haoyang-22/project/ESVO4mmWave/devel/lib/python3/dist-packages/dvs_msgs/msg/_EventArray.py"
-  "/home/haoyang-22/project/ESVO4mmWave/devel/lib/python3/dist-packages/dvs_msgs/msg/__init__.py"
+  "/home/haoyang-22/project/ESVOnew/devel/lib/python3/dist-packages/dvs_msgs/msg/_Event.py"
+  "/home/haoyang-22/project/ESVOnew/devel/lib/python3/dist-packages/dvs_msgs/msg/_EventArray.py"
+  "/home/haoyang-22/project/ESVOnew/devel/lib/python3/dist-packages/dvs_msgs/msg/__init__.py"
   "CMakeFiles/dvs_msgs_generate_messages_py"
 )
 

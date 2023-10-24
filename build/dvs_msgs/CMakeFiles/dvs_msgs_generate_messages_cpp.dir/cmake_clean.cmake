@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/haoyang-22/project/ESVO4mmWave/devel/include/dvs_msgs/Event.h"
-  "/home/haoyang-22/project/ESVO4mmWave/devel/include/dvs_msgs/EventArray.h"
+  "/home/haoyang-22/project/ESVOnew/devel/include/dvs_msgs/Event.h"
+  "/home/haoyang-22/project/ESVOnew/devel/include/dvs_msgs/EventArray.h"
   "CMakeFiles/dvs_msgs_generate_messages_cpp"
 )
 

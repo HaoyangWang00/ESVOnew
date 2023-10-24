@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/haoyang-22/project/ESVO4mmWave/devel/share/common-lisp/ros/dvs_msgs/msg/Event.lisp"
-  "/home/haoyang-22/project/ESVO4mmWave/devel/share/common-lisp/ros/dvs_msgs/msg/EventArray.lisp"
+  "/home/haoyang-22/project/ESVOnew/devel/share/common-lisp/ros/dvs_msgs/msg/Event.lisp"
+  "/home/haoyang-22/project/ESVOnew/devel/share/common-lisp/ros/dvs_msgs/msg/EventArray.lisp"
   "CMakeFiles/dvs_msgs_generate_messages_lisp"
 )
 

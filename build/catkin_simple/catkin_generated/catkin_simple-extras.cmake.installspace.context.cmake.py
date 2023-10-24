@@ -2,7 +2,7 @@
 DEVELSPACE = 'FALSE' == 'TRUE'
 INSTALLSPACE = 'TRUE' == 'TRUE'
 
-CATKIN_DEVEL_PREFIX = '/home/haoyang-22/project/ESVO4mmWave/devel'
+CATKIN_DEVEL_PREFIX = '/home/haoyang-22/project/ESVOnew/devel'
 
 CATKIN_GLOBAL_BIN_DESTINATION = 'bin'
 CATKIN_GLOBAL_ETC_DESTINATION = 'etc'
@@ -20,14 +20,14 @@ CATKIN_PACKAGE_LIBEXEC_DESTINATION = 'lib/catkin_simple'
 CATKIN_PACKAGE_PYTHON_DESTINATION = 'lib/python3/dist-packages/catkin_simple'
 CATKIN_PACKAGE_SHARE_DESTINATION = 'share/catkin_simple'
 
-CMAKE_BINARY_DIR = '/home/haoyang-22/project/ESVO4mmWave/build/catkin_simple'
-CMAKE_CURRENT_BINARY_DIR = '/home/haoyang-22/project/ESVO4mmWave/build/catkin_simple'
-CMAKE_CURRENT_SOURCE_DIR = '/home/haoyang-22/project/ESVO4mmWave/src/catkin_simple'
-CMAKE_INSTALL_PREFIX = '/home/haoyang-22/project/ESVO4mmWave/install'
-CMAKE_SOURCE_DIR = '/home/haoyang-22/project/ESVO4mmWave/src/catkin_simple'
+CMAKE_BINARY_DIR = '/home/haoyang-22/project/ESVOnew/build/catkin_simple'
+CMAKE_CURRENT_BINARY_DIR = '/home/haoyang-22/project/ESVOnew/build/catkin_simple'
+CMAKE_CURRENT_SOURCE_DIR = '/home/haoyang-22/project/ESVOnew/src/catkin_simple'
+CMAKE_INSTALL_PREFIX = '/home/haoyang-22/project/ESVOnew/install'
+CMAKE_SOURCE_DIR = '/home/haoyang-22/project/ESVOnew/src/catkin_simple'
 
 PKG_CMAKE_DIR = '${catkin_simple_DIR}'
 
 PROJECT_NAME = 'catkin_simple'
-PROJECT_BINARY_DIR = '/home/haoyang-22/project/ESVO4mmWave/build/catkin_simple'
-PROJECT_SOURCE_DIR = '/home/haoyang-22/project/ESVO4mmWave/src/catkin_simple'
+PROJECT_BINARY_DIR = '/home/haoyang-22/project/ESVOnew/build/catkin_simple'
+PROJECT_SOURCE_DIR = '/home/haoyang-22/project/ESVOnew/src/catkin_simple'

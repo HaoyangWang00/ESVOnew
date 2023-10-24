@@ -3,7 +3,7 @@
 
 # Relative path conversion top directories.
 set(CMAKE_RELATIVE_PATH_TOP_SOURCE "/usr/src/googletest")
-set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/haoyang-22/project/ESVO4mmWave/build/davis_ros_driver")
+set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/haoyang-22/project/ESVOnew/build/davis_ros_driver")
 
 # Force unix paths in dependencies.
 set(CMAKE_FORCE_UNIX_PATHS 1)

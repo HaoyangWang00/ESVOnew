@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/haoyang-22/project/ESVO4mmWave/devel/lib/libdavis_ros_driver_nodelet.pdb"
-  "/home/haoyang-22/project/ESVO4mmWave/devel/lib/libdavis_ros_driver_nodelet.so"
+  "/home/haoyang-22/project/ESVOnew/devel/lib/libdavis_ros_driver_nodelet.pdb"
+  "/home/haoyang-22/project/ESVOnew/devel/lib/libdavis_ros_driver_nodelet.so"
   "CMakeFiles/davis_ros_driver_nodelet.dir/src/driver.cpp.o"
   "CMakeFiles/davis_ros_driver_nodelet.dir/src/driver.cpp.o.d"
   "CMakeFiles/davis_ros_driver_nodelet.dir/src/driver_nodelet.cpp.o"

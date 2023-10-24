@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/haoyang-22/project/ESVO4mmWave/install")
+  set(CMAKE_INSTALL_PREFIX "/home/haoyang-22/project/ESVOnew/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -44,7 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/haoyang-22/project/ESVO4mmWave/build/davis_ros_driver/gtest/googletest/cmake_install.cmake")
+  include("/home/haoyang-22/project/ESVOnew/build/davis_ros_driver/gtest/googletest/cmake_install.cmake")
 
 endif()
 
