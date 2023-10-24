@@ -1,0 +1,18 @@
+<launch>
+  <!-- ROS BAG -->
+  <rosparam param="/use_sim_time">true</rosparam>
+  <node pkg="rosbag" type="play" name="play" output="screen" required="true"
+    args="/home/haoyang-22/project/ESVOnew/bag/1024-render-100.bag -r 0.5 -l --clock">
+    <!-- MODIFY THE ABOVE DIRECTORY -->
+  </node>
+
+  <!-- Publish stereo camera calibration -->
+  <include file="$(find esvo_time_surface)/launch/rosbag_launcher/rpg/rpg_calib_info.launch" />
+
+  <node pkg="tf" type="static_transform_publisher" name="radar_baselink" args="0 0 0 0 0 0 ti_mmwave_pcl ti_mmwave 100"/>
+
+  <!-- <node pkg="tf" type="static_transform_publisher" name="camera_baselink" args="-2 0 .95 -1.5707963267948966 0 -1.5707963267948966 ti_mmwave_pcl dvs_camera 100"/> -->
+  <node pkg="tf" type="static_transform_publisher" name="camera_baselink" args="-2 0 .95 -1.5707963267948966 0 -1.5707963267948966 ti_mmwave_pcl dvs_camera 100"/>
+
+
+</launch>

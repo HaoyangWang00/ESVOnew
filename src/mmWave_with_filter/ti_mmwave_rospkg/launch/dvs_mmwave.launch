@@ -22,6 +22,7 @@
     <remap from="events" to="/davis_left/events" />
     <remap from="image" to="/davis_left/image_raw" />
     <remap from="camera_info" to="/davis_left/camera_info" />
+    <param name="frame_id" value="dvs_camera"/>
   </node>
 
   <!-- display -->
@@ -48,7 +49,7 @@
     <param name="data_rate" value="921600"   />
     <param name="max_allowed_elevation_angle_deg" value="$(arg max_allowed_elevation_angle_deg)"   />
     <param name="max_allowed_azimuth_angle_deg" value="$(arg max_allowed_azimuth_angle_deg)"   />
-    <param name="frame_id" value="/ti_mmwave"/>
+    <param name="frame_id" value="ti_mmwave"/>
     <!-- <remap from="/ti_mmwave/radar_scan_pcl" to="/ti_mmwave/radar_scan_pcl_0"/> -->
   </node>
 
