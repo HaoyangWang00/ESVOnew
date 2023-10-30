@@ -13,7 +13,7 @@ src/minkindr
 src/eigen_catkin
 src/eigen_checks
 src/minkindr_ros
-mmWave_demo
+src/mmWave_demo
 msg_gen/
 srv_gen/
 msg/*Action.msg

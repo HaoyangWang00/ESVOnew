@@ -32,3 +32,6 @@ target_link_libraries(sync_node ${catkin_LIBARIES})
 
 cs_add_executable(ts_sync_node src/ts_sync.cpp)
 target_link_libraries(ts_sync_node ${catkin_LIBARIES})
+
+cs_add_executable(event_sync_node src/event_sync.cpp)
+target_link_libraries(event_sync_node ${catkin_LIBARIES})

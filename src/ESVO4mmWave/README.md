@@ -44,7 +44,7 @@ Dependencies are specified in the file [dependencies.yaml](dependencies.yaml). T
 
 	$ cd ~/catkin_ws/src
 	$ sudo apt-get install python3-vcstool
-	$ vcs-import < ESVO/dependencies.yaml
+	$ vcs-import < ESVO4mmWave/dependencies.yaml
 
 The previous command should clone the the repositories into folders called *catkin_simple*, *glog_catkin*, *gflags_catkin*, *minkindr*, etc. inside the `src` folder of your catking workspace, at the same level as this repository (ESVO).
 

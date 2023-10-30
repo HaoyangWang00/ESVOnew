@@ -1,4 +1,4 @@
-event_listen_to: /dvs/events
+event_listen_to: /davis_left/events
 img_listen_to: /dvs_rendering
 imu_listen_to: /dvs/imu
 render_listen_to: /dvs_rendering

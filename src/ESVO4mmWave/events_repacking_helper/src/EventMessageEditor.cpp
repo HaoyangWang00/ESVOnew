@@ -92,7 +92,7 @@ int main(int argc, char* argv[])
     ROS_INFO("***************************");
   }
 
-  const double frequency = 1000;
+  const double frequency = 100;
 
   // process events
   std::vector<std::string> topics;

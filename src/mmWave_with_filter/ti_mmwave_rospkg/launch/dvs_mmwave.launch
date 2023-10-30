@@ -12,6 +12,7 @@
     <param name="autofocus" value="true" />
   </node> -->
 
+  <rosparam param="/use_sim_time">true</rosparam>
   <!-- dvs camera driver -->
   <node ns="davis_left" name="davis_ros_driver" pkg="davis_ros_driver" type="davis_ros_driver" />
 

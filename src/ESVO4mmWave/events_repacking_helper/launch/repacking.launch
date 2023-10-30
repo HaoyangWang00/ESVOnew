@@ -1,6 +1,6 @@
 <launch>
   <node name="EventMessageEditor" pkg="events_repacking_helper" type="EventMessageEditor" output="screen" required="true"
-    args="/home/haoyang-22/project/ESVO/bag/1020_radarscan_origin.bag
-          /home/haoyang-22/project/ESVO/bag/1020_radarscan_event.bag">
+    args="/home/haoyang-22/project/ESVOnew/bag/231030_1.bag
+          /home/haoyang-22/project/ESVOnew/bag/231030_1_event.bag">
   </node>
 </launch>
