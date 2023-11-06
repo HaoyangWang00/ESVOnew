@@ -14,15 +14,15 @@
 
   <rosparam param="/use_sim_time">true</rosparam>
   <!-- dvs camera driver -->
-  <node ns="davis_left" name="davis_ros_driver" pkg="davis_ros_driver" type="davis_ros_driver" />
+  <node ns="dvs" name="davis_ros_driver" pkg="davis_ros_driver" type="davis_ros_driver" />
 
   <!-- dvs visualization -->
   <node name="dvs_renderer" pkg="dvs_renderer" type="dvs_renderer">
     <!-- <param name="display_method" value="grayscale"/> -->
     <param name="display_method" value="red-blue"/>
-    <remap from="events" to="/davis_left/events" />
-    <remap from="image" to="/davis_left/image_raw" />
-    <remap from="camera_info" to="/davis_left/camera_info" />
+    <remap from="events" to="/dvs/events" />
+    <remap from="image" to="/dvs/image_raw" />
+    <remap from="camera_info" to="/dvs/camera_info" />
     <param name="frame_id" value="dvs_camera"/>
   </node>
 
@@ -65,9 +65,9 @@
   <node pkg="tf" type="static_transform_publisher" name="camera_baselink" args="-2 0 .95 -1.5707963267948966 0 -1.5707963267948966 ti_mmwave_pcl davis_left 100"/>
   <!-- <node pkg="tf" type="static_transform_publisher" name="camera_baselink" args="-2 0 .95 -1.5707963267948966 0 -1.5707963267948966 ti_mmwave_pcl usb_webcam 100"/> -->
 
-  <node pkg="ti_mmwave_rospkg" type="radius_filter" name="radius_filter" output="screen"/>
+  <!-- <node pkg="ti_mmwave_rospkg" type="radius_filter" name="radius_filter" output="screen"/>
   <node pkg="ti_mmwave_rospkg" type="hungarian.py" name="hungarian" output="screen"/>
-  <node pkg="ti_mmwave_rospkg" type="showObject" name="clustering" output="screen"/>
+  <node pkg="ti_mmwave_rospkg" type="showObject" name="clustering" output="screen"/> -->
 
   <!-- Launch Rviz with pre-defined configuration to view mmWave sensor detected object data (color by intensity) -->
   <node pkg="rviz" type="rviz" name="rviz" args="-d $(find ti_mmwave_rospkg)/launch/rviz/dvs_mmwave.rviz"/>
